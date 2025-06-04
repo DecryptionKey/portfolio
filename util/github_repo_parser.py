@@ -3,6 +3,21 @@ import json
 import os
 from typing import Dict, List, Optional, Union
 from pathlib import Path
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Retrieve the secrets
+groq_api_key = os.getenv("GROQ_API_KEY")
+github_token = os.getenv("GITHUB_TOKEN")
+
+# Example usage
+print("GROQ API key and GitHub token loaded successfully (not printing for security).")
+
+# Use these tokens in your API requests or authentication headers like:
+# headers = {'Authorization': f'Bearer {github_token}'}
 
 class GitHubRepoParser:
     
@@ -96,5 +111,3 @@ def main():
 if __name__ == '__main__':
     main() 
 
-def main():
-    parser = GitHubRepoParser('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');
