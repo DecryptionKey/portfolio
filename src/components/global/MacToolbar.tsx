@@ -225,7 +225,7 @@ export default function MacToolbar({
             {showSignature && (
          <div className="absolute top-full left-0 mt-1 rounded-lg p-4 shadow-xl z-[100] bg-transparent backdrop-blur-none">
          <img 
-           src="/src/assets/images/me.svg" 
+           src="https://raw.githubusercontent.com/DecryptionKey/portfolio/9d91b30bd54f15b25a223a083824d5a55bee607d/src/assets/images/me.svg" 
            alt="Signature" 
            className="w-full max-w-[1600px] h-auto"
          />
