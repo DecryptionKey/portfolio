@@ -34,7 +34,7 @@ export default function Desktop({ initialBg, backgroundMap }: AppLayoutProps) {
     notes: false,
     github: false,
     resume: false,
-    spotify: false,
+    spotify: false, 
   });
 
   useEffect(() => {
